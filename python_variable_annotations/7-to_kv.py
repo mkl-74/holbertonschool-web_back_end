@@ -2,6 +2,5 @@
 """take a string as arguments and return a tuple"""
 from typing import Union, Tuple
 
-def to_kv(k: str, value: float) -> tuple:
-    """take a string as arguments and return a tuple"""
-    return (k, value**2)
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
+    return (k, v * v)
