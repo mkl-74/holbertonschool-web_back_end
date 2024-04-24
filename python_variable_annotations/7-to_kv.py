@@ -4,4 +4,5 @@ from typing import Union, Tuple
 
 
 def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
+    """take a string as arguments and return a tuple"""
     return (k, v * v)
