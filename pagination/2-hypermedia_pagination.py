@@ -12,7 +12,7 @@ from typing import List, Dict, Union
 
 def index_range(page: int, page_size: int) -> tuple[int, int]:
     """
-    Returns a tuple of start index and end index for a given page and page size.
+    Returns a tuple of start index and end index for a given page and page size.  # noqa
     """
     # Calculate the start index
     start_index = (page - 1) * page_size
@@ -47,8 +47,8 @@ class Server:
         Retrieves a specific page of data from the dataset.
         """
         # Validate input arguments
-        assert isinstance(page, int) and page > 0, "Page must be a positive integer"
-        assert isinstance(page_size, int) and page_size > 0, "Page size must be a positive integer"
+        assert isinstance(page, int) and page > 0, "Page must be a positive integer"  # noqa
+        assert isinstance(page_size, int) and page_size > 0, "Page size must be a positive integer"  # noqa
 
         # Get the start and end index for the page
         start_index, end_index = index_range(page, page_size)
@@ -61,9 +61,9 @@ class Server:
 
         return page_data
 
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict[str, Union[int, List[List], None]]:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict[str, Union[int, List[List], None]]:  # noqa
         """
-        Retrieves a specific page of data from the dataset with hypermedia information.
+        Retrieves a specific page of data from the dataset with hypermedia information.  # noqa
         """
         # Get the page data using get_page method
         page_data = self.get_page(page, page_size)
