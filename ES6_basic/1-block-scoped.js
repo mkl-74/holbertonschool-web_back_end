@@ -1,4 +1,5 @@
 export default function taskBlock(trueOrFalse) {
+    //constante modifiable
     let task = false;
     let task2 = true;
   
