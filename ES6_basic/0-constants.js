@@ -1,3 +1,2 @@
-// Déclaration des variables
-const taskFirst
-let taskNext
+const taskFirst;
+let taskNext;
