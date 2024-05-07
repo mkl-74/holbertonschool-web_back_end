@@ -1,10 +1,10 @@
 export default function taskBlock(trueOrFalse) {
-    //constante modifiable
+    //Variable let
     let task = false;
     let task2 = true;
   
     if (trueOrFalse) {
-        //constante non modifiable
+        //
         task = true;
         task2 = false;
     }
