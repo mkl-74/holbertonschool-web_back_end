@@ -9,14 +9,14 @@ describe('getNeighborhoodsList', () => {
     neighborhoodsList = new getNeighborhoodsList();
   });
 
-  test('addNeighborhood should add a new neighborhood to the list', () => {
+  it('addNeighborhood should add a new neighborhood to the list', () => {
     const res = neighborhoodsList.addNeighborhood('Noe Valley');
-    expect(res).toEqual(['SOMA', 'Union Square', 'Noe Valley']);
+    expect(res).toStrictEqual(['SOMA', 'Union Square', 'Noe Valley']);
   });
 
-  test('addNeighborhood should return the updated list of neighborhoods', () => {
+  it('addNeighborhood should return the updated list of neighborhoods', () => {
     neighborhoodsList.addNeighborhood('Noe Valley');
     const res = neighborhoodsList.addNeighborhood('Mission District');
-    expect(res).toEqual(['SOMA', 'Union Square', 'Noe Valley', 'Mission District']);
+    expect(res).toStrictEqual(['SOMA', 'Union Square', 'Noe Valley', 'Mission District']);
   });
 });
