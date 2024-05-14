@@ -5,7 +5,7 @@ function getCurrentYear() {
 
 // Fonction getBudgetForCurrentYear
 function getBudgetForCurrentYear(income, gdp, capita) {
-    const currentYear = getCurrentYear();
+    const currentYear = 2021;
 
     return {
         [`income-${currentYear}`]: income,
